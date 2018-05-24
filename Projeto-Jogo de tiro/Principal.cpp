@@ -21,8 +21,8 @@ int main(int argc, char *argv[]){
 
 				}
 				else{
-                    cout << " O predio esta a pegar fogo, nao existe muito tempo para sair "<< endl;
-					cout << " A unica coisa entre voce e a liberdade e aquele homem em sua frente armado, tente sobreviver, ou ..." << endl;
+                    cout << " O predio esta a pegar fogo, nao existe muito tempo para sair. "<< endl;
+		    cout << " A unica coisa entre voce e a liberdade e aquele homem em sua frente armado, tente sobreviver, ou ..." << endl;
 
 
 
