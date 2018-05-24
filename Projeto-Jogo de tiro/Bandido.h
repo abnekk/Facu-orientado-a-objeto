@@ -12,10 +12,10 @@ class Bandido : public Jogador{// sub-classe Bandido
 			srand (time(NULL));
 			r = rand() % 4 + 1;
 			if(r==1){
-				int cabeça;
-				cabeça = rand() % 85 + 1;
-				cout << "Acertou a cabeça: " << cabeça << " de dano" << endl;
-				vida = vida-cabeça;
+				int cabeÃ§a;
+				cabeÃ§a = rand() % 85 + 1;
+				cout << "Acertou a cabeÃ§a: " << cabeÃ§a << " de dano" << endl;
+				vida = vida-cabeÃ§a;
 				cout << "Vida atual: " << Vida << endl;
 				
 			}
@@ -51,4 +51,4 @@ class Bandido : public Jogador{// sub-classe Bandido
 		return Balas;
 	}
 	
-}
+} 
