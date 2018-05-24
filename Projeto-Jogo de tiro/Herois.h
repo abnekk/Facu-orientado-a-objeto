@@ -17,14 +17,12 @@ class Jogador{//Class do usuario
 		virtual void dano(){
 			//int cabeça = rand() % 100; 
 		}
-		void setNick(int Nick_Jogador){
+		Jogador(string Nick_Jogador, int Senha_Jogador){
 			Nick=Nick_Jogador;
-		}
-		int getNick(){
-			return Nick;
-		}
-		void setSenha(int Senha_Jogador){
 			Senha=Senha_Jogador;
+		}
+		string getNick(){
+			return Nick;
 		}
 		int getSenha(){
 			return Senha;
@@ -38,9 +36,6 @@ class Jogador{//Class do usuario
 		virtual ~dano(){};
 		
 }
-
-
-
 
 
 
