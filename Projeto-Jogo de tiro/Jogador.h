@@ -2,8 +2,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Bandido.h"
-#include "Policia.h"
 
 using namespace std;
 
@@ -14,8 +12,9 @@ class Jogador{//Class do usuario
 		int Placar;
 
 	public:
-		virtual void dano(){
-			//int cabeça = rand() % 100; 
+		virtual void Dano(){
+			cout << "Atacou" << endl;
+			
 		}
 		Jogador(string Nick_Jogador, int Senha_Jogador){
 			Nick=Nick_Jogador;
@@ -24,7 +23,7 @@ class Jogador{//Class do usuario
 		string getNick(){
 			return Nick;
 		}
-		int getSenha(){
+		string getSenha(){
 			return Senha;
 		}
 		void setPlacar(int Placar_Jogador){
@@ -33,11 +32,9 @@ class Jogador{//Class do usuario
 		int getPlacar(){
 			return Placar;
 		}
-		virtual ~dano(){};
+		virtual ~Jogador(){};
 		
-}
-
-
+};
 
 
 
