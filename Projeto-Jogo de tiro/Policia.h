@@ -1,20 +1,26 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include <time.h>
+
 using namespace std;
 
-class Policia : public Jogador{ // sub-classe Policia
+class Policia : public Jogador { // sub-classe Policia
 	private:
-		double Vida;
-		int Balas;
-		
+		double Vida = 100.00;
+		int Balas = 15;
 	public:
 		void Dano(){
 			int r;
 			srand (time(NULL));
 			r = rand() % 4 + 1;
 			if(r==1){
-				int cabeça;
-				cabeça = rand() % 100 + 1;
-				cout << "Acertou a cabeça: " << cabeça << " de dano" << endl;
-				vida = vida-cabeça;
+				int cabeca; 
+				cabeca = rand() % 20 + 60;
+				cout << "Acertou a cabeca: " << cabeca << " de dano" << endl;
+				Vida = Vida-cabeca;
 				cout << "Vida atual: " << Vida << endl;
 				
 			}
@@ -34,7 +40,7 @@ class Policia : public Jogador{ // sub-classe Policia
 			}
 			if(r==4){
 				cout << "Erro" << endl;
-				cout << "Vida atual: " << Vida << endl;
+				cout << "Vida atual: " << Vida << endl; 
 			}
 		}
 		void tiros(){
@@ -54,6 +60,9 @@ class Policia : public Jogador{ // sub-classe Policia
 		int getBalas(){
 			return Balas;
 		}
+		int combate(int player){
+			
+		}
 		
-}
+};
  
