@@ -1,21 +1,26 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <time.h>
+
 using namespace std;
 
 
 class Bandido : public Jogador{// sub-classe Bandido
 	private:
-		double Vida;
-		int Balas;
-		double dano;
+		double Vida = 100.00;
+		int Balas = 20;
 	public:
 		void Dano(){
 			int r;
 			srand (time(NULL));
 			r = rand() % 4 + 1;
 			if(r==1){
-				int cabeça;
-				cabeça = rand() % 85 + 1;
-				cout << "Acertou a cabeça: " << cabeça << " de dano" << endl;
-				vida = vida-cabeça;
+				int cabeca;
+				cabeca = rand() % 20 + 50;
+				cout << "Acertou a cabeca: " << cabeca << " de dano" << endl;
+				Vida = Vida-cabeca;
 				cout << "Vida atual: " << Vida << endl;
 				
 			}
@@ -45,10 +50,10 @@ class Bandido : public Jogador{// sub-classe Bandido
 		return Vida;
 	}
 	void setBalas(int Balas_Bandido){
-		Balas=Balas_Banadido;
+		Balas=Balas_Bandido;
 	}
 	int getBalas(){
 		return Balas;
 	}
 	
-} 
+};
