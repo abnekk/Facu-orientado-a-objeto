@@ -63,7 +63,7 @@ int main(int argc, char *argv[]){
 				cout << " Vida do Bandido: "<< endl;
 				cin >> vidinha;
 				P->vidona(vidinha);
-				int n;
+				int n=1;
 				while(n==1){
 					B->combate();
 					P->combate();
